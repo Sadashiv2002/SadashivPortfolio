@@ -225,7 +225,7 @@ function App() {
               src={SadashivProfessional}
               alt="developer"
               style={{
-                width: "100%",
+                width: "110%",
                 height: "100%",
                 objectFit: "contain",
               }}
