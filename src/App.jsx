@@ -1,3 +1,4 @@
+import sadaimg from "./assets/sadaimg.jpg";
 function App() {
   const styles = {
     section: {
