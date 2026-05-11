@@ -252,7 +252,7 @@ function App() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  objectPosition: "center top",
+                  objectPosition: "center center",
                   borderRadius: "28px",
                   display: "block",
                 }}
@@ -387,7 +387,45 @@ function App() {
         </div>
       </section>
 
-      {/* YOU CAN KEEP YOUR PROJECTS + CONTACT SECTION SAME AS BEFORE */}
+      {/* CONTACT */}
+      <section
+        style={{
+          ...styles.section,
+          textAlign: "center",
+        }}
+      >
+        <h2 style={styles.heading}>Let's Build Something Amazing</h2>
+
+        <p
+          style={{
+            color: "#CBD5E1",
+            maxWidth: "900px",
+            margin: "auto",
+            lineHeight: "2",
+            fontSize: "20px",
+          }}
+        >
+          I am always open to collaborating on exciting projects,
+          contributing to innovative ideas, and connecting with
+          developers, recruiters, and creative teams.
+        </p>
+
+        <div style={{ marginTop: "40px" }}>
+          <a
+            href="mailto:sadashiv48952@gmail.com"
+            style={styles.buttonPrimary}
+          >
+            Contact Me
+          </a>
+
+          <a
+            href="tel:+918603405040"
+            style={styles.buttonSecondary}
+          >
+            Call Me
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
