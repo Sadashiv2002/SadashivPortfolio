@@ -216,6 +216,14 @@ function App() {
   }}
 >
   <div
+  style={{
+    perspective: "1200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <div
     style={{
       width: "500px",
       height: "600px",
@@ -223,9 +231,14 @@ function App() {
       overflow: "hidden",
       border: "2px solid rgba(255,255,255,0.1)",
       boxShadow: "0 25px 70px rgba(0,0,0,0.6)",
-      transform: "rotateY(-12deg) rotateX(6deg)",
+      transform: "rotateY(-10deg) rotateX(5deg)",
       transition: "0.5s ease",
-      background: "rgba(255,255,255,0.04)",
+      background:
+        "linear-gradient(135deg, rgba(0,245,212,0.15), rgba(147,51,234,0.15))",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "15px",
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform =
@@ -235,18 +248,20 @@ function App() {
     }}
     onMouseLeave={(e) => {
       e.currentTarget.style.transform =
-        "rotateY(-12deg) rotateX(6deg)";
+        "rotateY(-10deg) rotateX(5deg)";
       e.currentTarget.style.boxShadow =
         "0 25px 70px rgba(0,0,0,0.6)";
     }}
   >
     <img
-      src={SadashivProfessional}
+      src={myPhoto}
       alt="Sadashiv"
       style={{
         width: "100%",
         height: "100%",
-        objectFit: "cover",
+        objectFit: "contain",
+        objectPosition: "center",
+        borderRadius: "20px",
       }}
     />
   </div>
