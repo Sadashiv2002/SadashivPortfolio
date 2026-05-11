@@ -222,7 +222,7 @@ function App() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+              src={sadaimg}
               alt="developer"
               style={{
                 width: "100%",
