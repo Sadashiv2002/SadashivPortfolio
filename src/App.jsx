@@ -1,4 +1,4 @@
-import sadaimg from "./assets/sadaimg.jpg";
+import SadashivProfessional from "./assets/SadashivProfessional.jpeg";
 function App() {
   const styles = {
     section: {
@@ -222,7 +222,7 @@ function App() {
             }}
           >
             <img
-              src={sadaimg}
+              src={SadashivProfessional}
               alt="developer"
               style={{
                 width: "100%",
