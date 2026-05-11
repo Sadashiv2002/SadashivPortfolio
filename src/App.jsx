@@ -226,8 +226,8 @@ function App() {
               alt="developer"
               style={{
                 width: "100%",
-                height: "90%",
-                objectFit: "cover",
+                height: "100%",
+                objectFit: "contain",
               }}
             />
           </div>
