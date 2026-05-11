@@ -86,7 +86,7 @@ function App() {
         overflowX: "hidden",
       }}
     >
-      {/* BACKGROUND GLOW */}
+      {/* BACKGROUND GLOW EFFECTS */}
       <div
         style={{
           position: "fixed",
@@ -130,7 +130,7 @@ function App() {
           zIndex: 2,
         }}
       >
-        {/* LEFT */}
+        {/* LEFT SIDE */}
         <div style={{ flex: 1, minWidth: "320px" }}>
           <p
             style={{
@@ -169,7 +169,8 @@ function App() {
             Hi, I'm <span style={{ color: "#00F5D4" }}>Sadashiv</span>,
             a Computer Science Engineering student passionate about
             Android Development, React Native applications, Firebase,
-            and building scalable user-focused mobile experiences.
+            and building scalable user-focused mobile experiences with
+            modern UI/UX principles.
           </p>
 
           <div style={{ marginTop: "40px" }}>
@@ -200,7 +201,7 @@ function App() {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
+        {/* RIGHT SIDE IMAGE */}
         <div
           style={{
             flex: 1,
@@ -260,6 +261,133 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* ABOUT */}
+      <section style={styles.section}>
+        <h2 style={styles.heading}>About Me</h2>
+
+        <p style={styles.subHeading}>
+          Passionate about building impactful applications and learning
+          modern technologies to solve real-world problems through
+          software engineering.
+        </p>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
+            gap: "30px",
+          }}
+        >
+          <div style={styles.card}>
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+              style={{
+                width: "100%",
+                borderRadius: "20px",
+                marginBottom: "25px",
+                height: "240px",
+                objectFit: "cover",
+              }}
+            />
+
+            <h2 style={{ color: "#00F5D4", marginBottom: "15px" }}>
+              My Journey
+            </h2>
+
+            <p
+              style={{
+                color: "#CBD5E1",
+                lineHeight: "1.9",
+              }}
+            >
+              I am currently pursuing B.Tech in Computer Science and
+              Engineering at Lovely Professional University. My
+              development journey started with curiosity for mobile
+              applications and evolved into creating modern,
+              performance-driven, and user-centric applications.
+            </p>
+          </div>
+
+          <div style={styles.card}>
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+              style={{
+                width: "100%",
+                borderRadius: "20px",
+                marginBottom: "25px",
+                height: "240px",
+                objectFit: "cover",
+              }}
+            />
+
+            <h2 style={{ color: "#00F5D4", marginBottom: "15px" }}>
+              What I Love
+            </h2>
+
+            <p
+              style={{
+                color: "#CBD5E1",
+                lineHeight: "1.9",
+              }}
+            >
+              I enjoy designing intuitive interfaces, building scalable
+              mobile apps, and experimenting with modern technologies
+              like React Native, Firebase, and Android development to
+              create seamless digital experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section style={styles.section}>
+        <h2 style={styles.heading}>Tech Stack</h2>
+
+        <p style={styles.subHeading}>
+          Technologies and tools I use to design, develop, and deploy
+          modern applications.
+        </p>
+
+        <div style={styles.card}>
+          <div style={{ marginBottom: "30px" }}>
+            <h3 style={{ color: "#00F5D4" }}>Languages</h3>
+
+            <span style={styles.tag}>JavaScript</span>
+            <span style={styles.tag}>TypeScript</span>
+            <span style={styles.tag}>Java</span>
+            <span style={styles.tag}>SQL</span>
+            <span style={styles.tag}>HTML/CSS</span>
+          </div>
+
+          <div style={{ marginBottom: "30px" }}>
+            <h3 style={{ color: "#00F5D4" }}>
+              Frameworks & Libraries
+            </h3>
+
+            <span style={styles.tag}>React Native</span>
+            <span style={styles.tag}>Expo</span>
+            <span style={styles.tag}>Expo Router</span>
+            <span style={styles.tag}>Node.js</span>
+            <span style={styles.tag}>Express.js</span>
+            <span style={styles.tag}>Firebase</span>
+          </div>
+
+          <div>
+            <h3 style={{ color: "#00F5D4" }}>Developer Tools</h3>
+
+            <span style={styles.tag}>VS Code</span>
+            <span style={styles.tag}>Android Studio</span>
+            <span style={styles.tag}>Git & GitHub</span>
+            <span style={styles.tag}>Postman</span>
+            <span style={styles.tag}>NPM</span>
+          </div>
+        </div>
+      </section>
+
+      {/* YOU CAN KEEP YOUR PROJECTS + CONTACT SECTION SAME AS BEFORE */}
     </div>
   );
 }
