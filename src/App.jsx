@@ -211,28 +211,46 @@ function App() {
           }}
         >
           <div
-            style={{
-              width: "420px",
-              height: "420px",
-              borderRadius: "30px",
-              overflow: "hidden",
-              border: "2px solid rgba(255,255,255,0.1)",
-              boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-              transform: "rotate(3deg)",
-            }}
-          >
-            <img
-              src={SadashivProfessional}
-              alt="developer"
-              style={{
-                width: "110%",
-                height: "100%",
-                objectFit: "contain",
-                objectPosition: "center"
-              }}
-            />
-          </div>
-        </div>
+  style={{
+    perspective: "1200px",
+  }}
+>
+  <div
+    style={{
+      width: "500px",
+      height: "600px",
+      borderRadius: "30px",
+      overflow: "hidden",
+      border: "2px solid rgba(255,255,255,0.1)",
+      boxShadow: "0 25px 70px rgba(0,0,0,0.6)",
+      transform: "rotateY(-12deg) rotateX(6deg)",
+      transition: "0.5s ease",
+      background: "rgba(255,255,255,0.04)",
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform =
+        "rotateY(0deg) rotateX(0deg) scale(1.03)";
+      e.currentTarget.style.boxShadow =
+        "0 35px 90px rgba(0,245,212,0.35)";
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform =
+        "rotateY(-12deg) rotateX(6deg)";
+      e.currentTarget.style.boxShadow =
+        "0 25px 70px rgba(0,0,0,0.6)";
+    }}
+  >
+    <img
+      src={SadashivProfessional}
+      alt="Sadashiv"
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  </div>
+</div>
       </section>
 
       {/* ABOUT */}
