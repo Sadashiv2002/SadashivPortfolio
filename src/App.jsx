@@ -218,45 +218,54 @@ function App() {
           >
             <div
               style={{
-                width: "500px",
-                height: "600px",
-                borderRadius: "30px",
-                overflow: "hidden",
-                border: "2px solid rgba(255,255,255,0.1)",
-                boxShadow: "0 25px 70px rgba(0,0,0,0.6)",
-                transform: "rotateY(-10deg) rotateX(5deg)",
-                transition: "0.5s ease",
-                background:
-                  "linear-gradient(135deg, rgba(0,245,212,0.15), rgba(147,51,234,0.15))",
+                perspective: "1200px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform =
-                  "rotateY(0deg) rotateX(0deg) scale(1.03)";
-                e.currentTarget.style.boxShadow =
-                  "0 35px 90px rgba(0,245,212,0.35)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform =
-                  "rotateY(-10deg) rotateX(5deg)";
-                e.currentTarget.style.boxShadow =
-                  "0 25px 70px rgba(0,0,0,0.6)";
-              }}
             >
-              <img
-                src={SadashivProfessional}
-                alt="Sadashiv"
+              <div
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  objectPosition: "center center",
-                  borderRadius: "28px",
-                  display: "block",
+                  width: "500px",
+                  height: "600px",
+                  borderRadius: "30px",
+                  overflow: "hidden",
+                  border: "2px solid rgba(255,255,255,0.1)",
+                  boxShadow: "0 25px 70px rgba(0,0,0,0.6)",
+                  transform: "rotateY(-10deg) rotateX(5deg)",
+                  transition: "0.5s ease",
+                  background:
+                    "linear-gradient(135deg, rgba(0,245,212,0.15), rgba(147,51,234,0.15))",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
-              />
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform =
+                    "rotateY(0deg) rotateX(0deg) scale(1.03)";
+                  e.currentTarget.style.boxShadow =
+                    "0 35px 90px rgba(0,245,212,0.35)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform =
+                    "rotateY(-10deg) rotateX(5deg)";
+                  e.currentTarget.style.boxShadow =
+                    "0 25px 70px rgba(0,0,0,0.6)";
+                }}
+              >
+                <img
+                  src={SadashivProfessional}
+                  alt="Sadashiv"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center center",
+                    borderRadius: "28px",
+                    display: "block",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
