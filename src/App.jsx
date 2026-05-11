@@ -225,7 +225,7 @@ function App() {
               src={sadaimg}
               alt="developer"
               style={{
-                width: "100%",
+                width: "120%",
                 height: "100%",
                 objectFit: "contain",
               }}
