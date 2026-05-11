@@ -228,6 +228,7 @@ function App() {
                 width: "110%",
                 height: "100%",
                 objectFit: "contain",
+                objectPosition: "center"
               }}
             />
           </div>
